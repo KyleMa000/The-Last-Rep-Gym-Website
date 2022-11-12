@@ -1,0 +1,256 @@
+body{
+    background-color: white;
+    display: grid; /* grid display */
+    grid-template-rows: 300px 1fr 200px 220px;
+    grid-template-columns: 100vw;
+}
+
+header{
+    background-color: #858585; /* fall back color */
+    
+    background-position: center center; /* background image */
+    background-repeat: no-repeat; 
+    background-size: cover;       
+    background-image:url('../images/background.jpg');
+
+    min-height: 400px; /* set min height */
+
+    display: grid; /* grid display */
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+
+    font-family: 'Anton', sans-serif;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    grid-row: 1;
+}
+
+nav {
+    grid-column:1/-1; /* grid settings */
+    grid-row: 1;
+    justify-self:space-between;
+    align-self: center;
+}
+
+nav ul {
+    width: 100vw; /* flex setting */
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    margin: auto; /* position setting */
+    font-size: 150%;  /* text setting*/
+}
+
+a:visited{ /* visited link does not turn blue*/
+    color: white;
+    -webkit-text-stroke: 1px black;
+
+}
+
+a{
+    color: white;
+}
+
+a.skip{
+    position: absolute;
+    top: -40px;
+}
+
+*:focus{
+    border: 2px solid white;
+  }
+
+a.skip:focus{
+    top: 10px;
+    grid-row: 1;
+    justify-self: center;
+    color: white;
+    text-decoration-style: solid;
+  }
+
+nav a{ /* remove underline */
+    text-decoration: none;
+}
+
+@keyframes zoomin { /* animation */
+    0%   {color: red; font-size: 50%;}
+    25%  {color: yellow; font-size: 100%;}
+    50%  {color: blue; font-size: 150%;}
+    100% {color: green; font-size: 200%;}
+  }
+
+h1{
+    grid-row:1/-1; /* grid settings */
+    grid-column: 1/-1;
+    justify-self: center;
+    align-self: center;
+
+    font-size: 200%; /* text setting */
+    animation-name: zoomin;
+    animation-duration: 4s;
+}
+
+a.active{ /*show current page*/
+    font-style: italic;
+    color: red;
+    -webkit-text-stroke: 1px black;
+}
+
+.fa-solid:hover{
+    color: red;
+}
+
+main{
+    background-position: center center; /* background image */
+    background-color: grey;
+    background-image:url('../images/wall.jpg');
+    display: grid;
+    justify-content: center;
+}
+
+.maintext{
+    background-position: center center; /* background image */
+    background-repeat: repeat-x; 
+    background-size:contain;     
+    background-image:url('../images/warn.jpg');
+}
+
+article.maintext{
+    display: grid;
+    grid-template-rows: 10px 4fr 10px;
+    justify-content: center;
+    width: 100vw;
+    justify-self: center;
+}
+
+article.maintext p{
+    font-family: sans-serif;
+    font-size: 80%;
+    text-align: center;
+    color: white;
+    grid-row: 2;
+    margin: 30px;
+}
+
+
+
+h2{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+    -webkit-text-stroke: 1px black;
+    font-size: 300%;
+    text-align: center;
+    margin: 10px;
+}
+
+article.gallery{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+section.workout{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+section.workout article{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1;
+    background-color: black;
+    margin: 30px;
+}
+
+section.workout article img{
+    border: 5px solid black;
+    background-color: white;
+}
+
+section.workout article p{
+    text-align: center;
+    color: white;
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+
+img{
+    margin: 10px;
+    border: 5px solid white;
+    width: 80vw;
+}
+
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+      scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    h1{
+      animation: none;
+    }
+  }
+  aside{
+    display: grid;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    align-items: center;
+    justify-items: center;
+  }
+  aside p{
+    margin: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 80%;
+    text-align: center;
+    color: white;
+  }
+
+  footer{
+    color: white;
+    background-color: #858585;
+    background-image:url('../images/warn.jpg');
+    background-position: center center; /* background image */
+    background-repeat:repeat-x; 
+    background-size:contain;
+    display: grid;
+    grid-template-rows: 40px 1fr 4fr 40px;
+    justify-content: center;
+  }
+
+  footer p.main{
+    grid-row: 2;
+    text-align: center;
+    margin-top: 20px;
+    font-family: sans-serif;
+  }
+
+  footer p{
+    grid-row: 3;
+    text-align: center;
+    font-family: sans-serif;
+    align-self: center;
+  }
+
+
+  form{
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
