@@ -32,7 +32,6 @@ header{
 nav {
     grid-column:1/-1; /* grid settings */
     grid-row: 1;
-    justify-self:space-between;
     align-self: center;
 }
 
@@ -177,7 +176,7 @@ section.workout article{
     display: grid;
     align-items: center;
     justify-items: center;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     background-color: black;
     margin: 30px;
 }
@@ -258,7 +257,7 @@ img{
   form{
     grid-row: 3;
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     margin-top: 10px;
     margin-bottom: 30px;
   }
