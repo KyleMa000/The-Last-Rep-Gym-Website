@@ -75,10 +75,10 @@ nav a{ /* remove underline */
 }
 
 @keyframes zoomin { /* animation */
-    0%   {color: red; font-size: 50%;}
-    25%  {color: yellow; font-size: 100%;}
-    50%  {color: blue; font-size: 150%;}
-    100% {color: green; font-size: 200%;}
+    0%   {font-size: 50%;}
+    25%  {font-size: 100%;}
+    50%  {font-size: 150%;}
+    100% {font-size: 200%;}
   }
 
 h1{
@@ -114,15 +114,6 @@ main{
     background-color: black;
 }
 
-h3{
-    color: white;
-    text-align: center;
-    margin: 30px;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-
-}
 
 article.maintext{
     display: grid;
