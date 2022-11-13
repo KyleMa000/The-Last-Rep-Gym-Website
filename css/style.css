@@ -1,68 +1,61 @@
 body{
-    background-color: white;
     display: grid; /* grid display */
     grid-template-rows: 300px 1fr 200px 220px;
-    grid-template-columns: 100vw;
 }
 
 header{
-    background-color: black; /* fall back color */
-
+    background-color: black; /*background*/
 
     min-height: 400px; /* set min height */
 
     display: grid; /* grid display */
     grid-template-rows: 1fr 2fr;
-    grid-template-columns: 1fr;
+    align-items: center;
 
-    font-family: 'Anton', sans-serif;
-    -webkit-text-stroke: 1px black;
+    font-family: 'Anton', sans-serif; /*font setting*/
     color: white;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
 
-    grid-row: 1;
+    grid-row: 1; /* taken first grid*/
 }
 
 nav {
     grid-column:1/-1; /* grid settings */
     grid-row: 1;
-    align-self: center;
 }
 
 nav ul {
-    width: 100vw; /* flex setting */
-    display: flex;
+    display: flex; /*flex*/
     flex-direction: row;
 }
 
 nav li {
-    margin: auto; /* position setting */
+    margin: auto;/* position setting */
     font-size: 150%;  /* text setting*/
 }
 
 a:visited{ /* visited link does not turn blue*/
     color: white;
-    -webkit-text-stroke: 1px black;
 
 }
 
-a{
+a{ /* all link appear white */
     color: white;
 }
 
-a.skip{
+a.skip{ /*hide skip link*/
     position: absolute;
     top: -40px;
     color: red;
 }
 
-*:focus{
+*:focus{ /* focus box*/
     border: 2px solid white;
   }
 
-a.skip:focus{
+a.skip:focus{ /* show skip link */
     top: 10px;
     grid-row: 1;
     justify-self: center;
@@ -78,27 +71,26 @@ nav a{ /* remove underline */
     0%   {font-size: 50%;}
     25%  {font-size: 100%;}
     50%  {font-size: 150%;}
-    100% {font-size: 200%;}
+    100% {font-size: 250%;}
   }
 
 h1{
     grid-row:1/-1; /* grid settings */
     grid-column: 1/-1;
     justify-self: center;
-    align-self: center;
 
-    font-size: 200%; /* text setting */
-    animation-name: zoomin;
+    font-size: 250%; /* text setting */
+
+    animation-name: zoomin; /*animation*/
     animation-duration: 4s;
 }
 
 a.active{ /*show current page*/
     font-style: italic;
     color: red;
-    -webkit-text-stroke: 1px black;
 }
 
-.fa-solid:hover{
+.fa-solid:hover{ /* font awsome icon */
     color: red;
 }
 
@@ -106,85 +98,77 @@ main{
     background-position: center center; /* background image */
     background-color: grey;
     background-image:url('../images/wall.jpg');
-    display: grid;
+
+    display: grid; /* grid display*/
     justify-content: center;
+
+    color: white;
 }
 
 .maintext{
     background-color: black;
 }
 
-
-article.maintext{
-    display: grid;
-    grid-template-rows: 40px 4fr 40px;
-    justify-content: center;
-    width: 100vw;
-    justify-self: center;
-}
-
 article.maintext p{
-    font-family: sans-serif;
+    font-family: sans-serif; /*text settings*/
     font-size: 80%;
     text-align: center;
-    color: white;
-    grid-row: 2;
-    margin: 30px;
+    margin: 40px 25px 40px;
 }
-
 
 
 h2{
-    color: white;
+    /* text setting*/
     text-transform: uppercase;
     font-weight: bold;
     font-family: 'Anton', sans-serif;
-    -webkit-text-stroke: 1px black;
-    font-size: 300%;
+    font-size: 200%;
     text-align: center;
     margin: 10px;
 }
 
 article.gallery{
-    display: flex;
+    display: flex; /*flex gallery*/
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
 }
 
 section.workout{
-    display: flex;
+    display: flex; /* flex workout page cards*/
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
 }
 
-section.workout article{
-    display: grid;
-    align-items: center;
+section.workout article{ 
+    display: grid; /*card content grid */
     justify-items: center;
-    grid-template-columns: 1fr;
     background-color: black;
-    margin: 30px;
+    margin: 20px;
 }
 
 section.workout article img{
-    border: 5px solid black;
-    background-color: white;
+    background-color: white; /* img background*/
 }
 
 section.workout article p{
     text-align: center;
-    color: white;
     margin: 20px;
     font-family: sans-serif;
+}
+
+h3{
+    font-family:  sans-serif; /*font setting*/
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 
 img{
     margin: 10px;
-    border: 5px solid white;
     width: 80vw;
 }
 
@@ -197,55 +181,47 @@ img{
     h1{
       animation: none;
     }
-  }
-  aside{
-    display: grid;
+}
+
+
+aside{
     background-color: black;
     color: white;
     font-family: sans-serif;
-    align-items: center;
-    justify-items: center;
-  }
-  aside p{
-    margin: 20px;
-    text-align: center;
-    font-family: sans-serif;
+}
+aside p{
+    margin: 30px;
     font-size: 80%;
     text-align: center;
-    color: white;
-  }
+}
 
-  footer{
+footer{
     color: white;
     background-color: black;
 
     display: grid;
     grid-template-rows: 40px 1fr 4fr 40px;
     justify-content: center;
-  }
 
-  footer p.main{
-    grid-row: 2;
-    text-align: center;
-    margin-top: 20px;
     font-family: sans-serif;
-  }
-
-  footer p{
-    grid-row: 3;
     text-align: center;
-    font-family: sans-serif;
-    align-self: center;
     color: white;
-  }
+}
+
+footer p.main{
+    grid-row: 2;
+    margin-top: 20px;
+}
+
+footer p{
+    grid-row: 3;
+}
 
 
-  form{
-    background-color: black;
+form{
     grid-row: 3;
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 10px;
     margin-bottom: 30px;
-    color: white;
-  }
+}
