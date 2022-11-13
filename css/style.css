@@ -118,6 +118,16 @@ main{
     background-color: black;
 }
 
+h3{
+    color: white;
+    text-align: center;
+    margin: 30px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
 article.maintext{
     display: grid;
     grid-template-rows: 40px 4fr 40px;
@@ -160,6 +170,7 @@ section.workout{
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: center;
 }
 
 section.workout article{
