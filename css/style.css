@@ -59,7 +59,7 @@ a{
 a.skip{
     position: absolute;
     top: -40px;
-    color: white;
+    color: red;
 }
 
 *:focus{
