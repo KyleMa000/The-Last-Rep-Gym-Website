@@ -123,7 +123,7 @@ main{
 
 article.maintext{
     display: grid;
-    grid-template-rows: 10px 4fr 10px;
+    grid-template-rows: 40px 4fr 40px;
     justify-content: center;
     width: 100vw;
     justify-self: center;
