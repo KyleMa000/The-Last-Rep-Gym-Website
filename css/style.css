@@ -115,10 +115,7 @@ main{
 }
 
 .maintext{
-    background-position: center center; /* background image */
-    background-repeat: repeat-x; 
-    background-size:contain;     
-    background-image:url('../images/warn.jpg');
+    background-color: black;
 }
 
 article.maintext{
@@ -225,7 +222,7 @@ img{
     background-color: #858585;
     background-image:url('../images/warn.jpg');
     background-position: center center; /* background image */
-    background-repeat:repeat-x; 
+    background-repeat:repeat; 
     background-size:contain;
     display: grid;
     grid-template-rows: 40px 1fr 4fr 40px;
