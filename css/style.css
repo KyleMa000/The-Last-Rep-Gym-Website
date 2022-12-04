@@ -125,6 +125,7 @@ h2{
     font-size: 200%;
     text-align: center;
     margin: 10px;
+    background-color: black;
 }
 
 article.gallery{
@@ -258,7 +259,6 @@ form{
 
     article.gallery{
         flex-direction: row;
-        align-items: center;
         justify-content: center;
     }
 
