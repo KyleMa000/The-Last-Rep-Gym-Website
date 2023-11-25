@@ -6,3 +6,8 @@ a webdesign class, and used the final project opportunity to create this website
 
 The color and format choices are constrained by the project standard of the webdesign class. I hope in the future, I could get a chance
 to train with Andrei again and perfect this website with him.
+
+The website is deployed with Github: [Click Here](https://kylema000.github.io/The-Last-Rep-Gym-Website/index.html)
+
+![A Photo of Andrei](/images/andrei_barbell.png)
+
